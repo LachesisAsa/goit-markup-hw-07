@@ -1,0 +1,123 @@
+.header {
+    display: flex;
+    align-items: center;
+    min-height: 80px;
+    border-bottom: 1px solid $header-line-color;
+    background: $primary-bg-color;
+}
+
+.header__logo {
+    font-family: Raleway, sans-serif;
+    color: $black-color-tex;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+}
+
+/* menu-nav */
+
+.menu__nav {
+    display: flex;
+    align-items: center;
+}
+
+/* site-nav */
+
+.menu-nav__list {
+    display: flex;
+    margin-left: 93px;
+}
+
+.menu-nav__item{
+    &:not(:last-child) {
+        margin-right: 50px;
+    }
+}
+
+.menu-nav__link.carrent {
+        position: relative;
+}
+
+.menu-nav__link.carrent{  
+    &::after {
+        content: '';
+        
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        
+        width: 100%;
+        height: 4px;
+        
+        border-radius: 2px;
+        
+        background: $accent-color;
+    }
+}
+
+
+.menu-nav__link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    padding-bottom: 32px;
+    padding-top: 32px;
+    color: $primary-text-color;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-nav__link,
+.menu-nav__link,
+.menu-nav__link.carrent {
+    &:hover, :focus{
+        color: $accent-color;
+    }
+}
+
+/* menu__auth */
+
+.menu-auth__list {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+
+.menu-auth__item{
+    &:not(:last-child) {
+        margin-right: 50px;
+    }
+}
+
+.menu-auth__link {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    text-decoration: none;
+    color: $title-text-color;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-auth__link,
+.menu-auth__link {
+    &:hover, :focus{
+        color: $accent-color;
+    }
+}
+
+.menu-auth__icon,
+.menu-auth__icon {
+    margin-right: 10px;
+    fill: currentColor;
+}
