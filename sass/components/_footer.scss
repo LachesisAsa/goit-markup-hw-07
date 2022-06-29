@@ -54,11 +54,10 @@
 }
 
 .address__link,
-.address__link,
-.address__link-add,
 .address__link-add {
-&:hover, :focus{
+&:hover, &:focus{
     color: $accent-color;
+    outline: none;
 }
     
 }

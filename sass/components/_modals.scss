@@ -109,26 +109,23 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop__form-field input,
 .backdrop__form-field input{
- &:hover, :focus-within {
+ &:hover, &:focus-within {
      border: 1px solid $secondary-accent-color;
      outline: none;
     }
  }
 
-.backdrop__form-field textarea,
-.backdrop__form-field textarea {
-    &:hover, :focus{
+.backdrop__form-field textarea{
+    &:hover, &:focus{
         border: 1px solid $secondary-accent-color;
         outline: none;
     }
 }
 
-.backdrop__form-field,
-.backdrop__form-field {
+.backdrop__form-field{
     &:hover .backdrop__input-icon,
-    :focus-within .backdrop__input-icon{
+    &:focus-within .backdrop__input-icon{
         fill: $secondary-accent-color;
         outline: none;
     }
@@ -197,9 +194,8 @@
     margin-left: 4px;
 }
 
-.backdrop__form-contract-link,
-.backdrop__form-contract-link {
-    &:hover, :focus{
+.backdrop__form-contract-link{
+    &:hover, &:focus{
         color: $secondary-accent-color;
         outline: 1px solid $secondary-accent-color;
     }
@@ -220,6 +216,7 @@
     padding: 15px 16px;
     margin-right: 12px;
     color: $white-color-text;
+    outline: none;
 }
 
 .footer__input{

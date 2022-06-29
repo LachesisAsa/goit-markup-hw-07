@@ -20,13 +20,14 @@
     transition-property: background-color, box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    outline: none;
 }
 
-.button-hero,
-.button-hero {
-    &:hover, :focus{
+.button-hero{
+    &:hover, &:focus{
         background: $secondary-accent-color;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        outline: 2px solid $accent-color;
     }
 }
 
@@ -51,11 +52,11 @@
     transition-property: color, background-color, box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    outline: none;
 }
 
-.portfolio-filters__button,
 .portfolio-filters__button {
-    &:hover, :focus{
+    &:hover, &:focus{
         color: $white-color-text;
         background: $accent-color;
         box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -86,6 +87,7 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     cursor: pointer;
     padding: 0;
+    outline: none;
 }
 
 .backdrop__icon-close {
@@ -95,10 +97,9 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop__button-close,
-.backdrop__button-close {
+.backdrop__button-close{
     &:hover .backdrop__icon-close,
-    :focus .backdrop__icon-close{
+    &:focus .backdrop__icon-close{
         fill: $secondary-accent-color;
     }
 }
@@ -126,9 +127,8 @@
     outline: none;
 }
 
-.backdrop__form-button,
-.backdrop__form-button {
-    &:hover, :focus{
+.backdrop__form-button{
+    &:hover, &:focus{
         background: $secondary-accent-color;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     }
@@ -155,13 +155,14 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     margin: 0;
+
 }
 
-.footer__button,
 .footer__button {
-    &:focus, :hover{
+    &:focus, &:hover{
         background: $secondary-accent-color;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        outline: none;
     }
 }
 

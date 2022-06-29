@@ -43,9 +43,9 @@
     fill: $white-color-text;
 }
 
-.footer-social__link,
 .footer-social__link{
-    &:hover, :focus{
+    &:hover, &:focus{
         background-color: $accent-color;
+        outline: none;
     }
 }

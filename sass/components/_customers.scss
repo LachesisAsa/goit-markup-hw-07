@@ -36,10 +36,10 @@
     fill: currentColor;
 }
 
-.customers__links,
 .customers__links {
-    &:hover, :focus{
+    &:hover, &:focus{
         border-color: $accent-color;
         color: $accent-color;
+        outline: none;
     }
 }

@@ -85,10 +85,10 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team-list-social__links,
 .team-list-social__links {
-    &:hover, :focus{
+    &:hover, &:focus{
         background-color: $accent-color;
         color: $white-color-text;
+        outline: none;
     }
 }
